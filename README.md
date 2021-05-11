@@ -1,18 +1,17 @@
 # The median and percentiles
 
-Congratulations on completing the last exercise.  If you are given a data set and are asked to describe the data within it using a sentence such as:
+Plotting the cumulative probability distribution is useful as if we know this function we can use it to describe the data using a sentence such as:
 
 _z % of the data points are less than or equal to x._ 
 
-You know how to determine the value of x if you are given z and the value of z if you are given x.
-
-You are not the first person to realise that describing a data set using a sentence like the one above is useful.  Many other researchers will have written sentences like this about data sets and these researchers wrote codes like those that you have just written.  In addition, these researchers wrote functions that you can reuse to do these calculations for you.  For example, if you have an np array containing the results from some experiments called data you can calculate the x value that z % of the data is less or equal to by using the `np.percentile` function shown below:
+In this exercise I am going to show you how to determine the value of x if you are given z.
+We can do this using the function `np.percentile` as shown below:
 
 ````
 x = np.percentile( data, z ) 
 ````
 
-This function works exactly like the code you have written to compute this quantity.
+The quantity, x, that is output by this function can gives us a value that z % of the data in the NumPy array `data` is less or equal to.
 
 __To complete this exercise I would like you to use `np.percentile` to calculate:__
 
