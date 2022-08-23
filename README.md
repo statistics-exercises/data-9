@@ -7,9 +7,9 @@ _z % of the data points are less than or equal to x._
 In this exercise I am going to show you how to determine the value of x if you are given z.
 We can do this using the function `np.percentile` as shown below:
 
-````
+```python
 x = np.percentile( data, z ) 
-````
+```
 
 The quantity, x, that is output by this function can gives us a value that z % of the data in the NumPy array `data` is less or equal to.
 
